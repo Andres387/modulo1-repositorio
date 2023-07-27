@@ -1,0 +1,444 @@
+.header {
+    background-color: white;
+    grid-area: header ;    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.botons_sup {
+    gap: 10px;
+    align-items: center;
+    
+    top: 27px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.link_redes {
+    gap: 10px;
+    max-width: 234px;
+    height: 92px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.download_resume {
+    background-color: rgba(255, 100, 100, 1);
+    width: 208px;
+    height: 47px;
+    padding: auto;    
+    font-weight: 180;
+    font-size: 16px;
+    line-height: 23.5px;
+}
+.header2 {
+    font-family: "Heebo";
+    margin-bottom: 15px;
+    background-color: white;
+    grid-area: header2;        
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;              
+}
+.tex_columna_left {     
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.red_tex {
+    margin-left: 5px;
+    
+    color: red;
+}
+.tex_small {
+    max-width: 456px;
+    font-family: "Heebo";
+    font-size: 16px;
+    line-height: 23.5px;
+}
+.image_profile {    
+    width: auto;
+    height: 400px;
+    border-radius: 50%;    
+}
+
+.grid_midle{
+    display: grid;
+    grid-template-areas:  ". header_m ."    
+                          "columnblue header_m columnblue2"
+                          ". header_m .";
+    grid-template-columns:200px 1fr 200px;
+    grid-template-rows: 60px 1fr 60px;
+    
+    
+}
+.columnblue {
+    grid-area: columnblue;
+    background-color: rgba(163, 206, 219, 1);
+
+
+}
+.columnblue2 {
+    grid-area: columnblue2;
+    background-color: rgba(163, 206, 219, 1);
+
+}
+.header_m {
+    color:rgba(237, 247, 250, 1);
+    text-align: center;
+    font-family: "Heebo";
+    font-weight: 10;
+    font-size: 36px;
+    line-height: 23.5px;
+    grid-area: header_m;
+    background-color: rgba(10, 91, 116, 1);
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.skills_list {
+    
+    display: grid;
+    grid-template-areas:  "figma middle_line css"    
+                          "bootstrap middle_line javascript"
+                          "html_5 middle_line sass"
+                          "git_hub middle_line vuejs"
+                          "slack middle_line git";
+    grid-template-columns:1fr 10px 1fr;
+    grid-template-rows: 80px 80px 80px 80px 80px;
+    font-size: 16px;
+    font-family: "Heebo";
+    justify-items: center;
+}
+.figma{
+    grid-area: figma;
+}
+.bootstrap{
+    grid-area: bootstrap;
+}
+.html_5{
+    grid-area: html_5;
+}
+.git_hub{
+    grid-area: git_hub;
+}
+.slack{
+    grid-area: slack;
+}
+.css{
+    grid-area: css;
+}
+.javascript{
+    grid-area: javascript;
+}
+.sass{
+    grid-area: sass;
+}
+.vuejs{
+    grid-area: vuejs;
+}
+.git{
+    grid-area: git;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+}
+.list_img {
+    min-width:auto;
+    height: 40px;
+}
+.list_box {
+    position: relative;
+    border: 1px solid cyan;
+    text-align: justify;    
+    width: 250px;
+    height: 40px;
+    background: white;
+}
+.list_box div{
+    position: relative;
+    width: 0;
+    height: 40px;
+    background-color: cyan;
+}
+
+#f_progressbar{
+    animation: figma-bar 2s forwards;
+    background: rgba(26, 188, 254, 1);
+    height: 40px;
+    position: relative;
+    line-height: inherit;
+}
+@keyframes figma-bar{
+    100%{
+        width: 10%;
+    }
+}
+
+#b_progressbar{
+    animation: bootsrap-bar 2s forwards;
+    background: rgba(102, 57, 182, 1);
+    height: 40px;
+    position: absolute;
+    line-height: inherit;
+}
+@keyframes bootsrap-bar{
+    100%{
+        width: 9%;
+    }
+}
+
+#h_progressbar{
+    animation: html-bar 2s forwards;
+    background: rgba(241, 101, 41, 1);
+    height: 40px;
+    position: relative;
+    line-height: inherit;
+}
+@keyframes html-bar{
+    100%{
+        width: 90%;
+    }
+}
+
+#gh_progressbar{
+    animation: git_hub-bar 2s forwards;
+    background: black;
+    height: 40px;
+    position: relative;
+    line-height: inherit;
+}
+@keyframes git_hub-bar{
+    100%{
+        width: 22%;
+    }
+}
+
+#s_progressbar{
+    animation: slack-bar 2s forwards;
+    background: rgba(224, 30, 90, 1);
+    height: 40px;
+    position: relative;
+    line-height: inherit;
+}
+@keyframes slack-bar{
+    100%{
+        width: 33%;
+    }
+}
+.middle_line {
+    
+    height: 100%;
+    grid-area: middle_line;
+    border-style: solid;
+    border-color: white;
+    border-width:1px ;
+    
+    
+}
+#c_progressbar{
+    animation: css-bar 2s forwards;
+    background: rgba(38, 80, 230, 1);
+    height: 40px;
+    position: relative;
+    line-height: inherit;
+}
+@keyframes css-bar{
+    100%{
+        width: 29%;
+    }
+}
+#j_progressbar{
+    animation: js-bar 2s forwards;
+    background: rgba(255, 217, 61, 1);
+    height: 40px;
+    position: relative;
+    line-height: inherit;
+}
+@keyframes js-bar{
+    100%{
+        width: 55%;
+    }
+}
+#s_progressbar{
+    animation: sass-bar 2s forwards;
+    background: rgba(207, 100, 154, 1);
+    height: 40px;
+    position: relative;
+    line-height: inherit;
+}
+@keyframes sass-bar{
+    100%{
+        width: 9%;
+    }
+}
+#v_progressbar{
+    animation: v-bar 2s forwards;
+    background: rgba(65, 184, 131, 1);
+    height: 40px;
+    position: relative;
+    line-height: inherit;
+}
+@keyframes v-bar{
+    100%{
+        width: 12%;
+    }
+}
+#g_progressbar{
+    animation: g-bar 2s forwards;
+    background: rgba(240, 80, 51, 1);
+    height: 40px;
+    position: relative;
+    line-height: inherit;
+}
+@keyframes g-bar{
+    100%{
+        width: 76%;
+    }
+}
+.skills_list div{
+    gap: 10px;
+}
+.experiences_box_inf {
+    display: grid;
+    grid-template-areas:  "hori_line"    
+                          "expe_title"
+                          "hori_line2"
+                          "microsoft"
+                          "figma_inf";
+    grid-template-columns:1fr;
+    grid-template-rows: 10px 1fr 10px 1frx 1frx;
+    font-size: 16px;
+    font-family: "Heebo";
+}
+.experiences_box_inf{
+    font-family: "Heebo";
+}
+.hori_line{
+    width: 1fr;
+    height: 0xp;    
+    border-style: solid;
+    border-color: white;
+    border-width:1px ;
+    grid-area: hori_line;
+}
+.expe_title{
+    grid-area:expe_title;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.hori_line2{
+    margin-bottom: 5px;
+    width: 50%;
+    height: 0px;    
+    border-style: solid;
+    border-color: white;
+    border-width:1px ;
+    grid-area: hori_line2;
+}
+.microsoft{
+    height: 1fr;
+    grid-area: microsoft;
+}
+
+.figma_inf{
+    grid-area: figma_inf;
+}
+.mf_box{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.microsoft_img{
+    height: 52px;
+    width: auto;    
+}
+.figma_img{
+    height: 52px;
+    width: auto;    
+}
+.figma_tex_inf{
+    height: 163px;
+    max-width: 351px;
+    display: flex;
+    align-items: center;
+}
+.tex_inf{
+    height: 163px;
+    max-width: 351px;
+    display: flex;
+    align-items: center;
+    
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;      
+    padding:  50px;   
+}
+@media screen and (max-width:728px) {
+    .skills_list {
+        display: grid;
+    grid-template-areas:  "figma "    
+                          "bootstrap" 
+                          "html_5" 
+                          "git_hub"  
+                          "slack " 
+                          "css"
+                          "javascript"
+                          "sass"
+                          "vuejs"
+                          "git"
+                          ;
+    grid-template-columns:1fr ;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+        
+    }
+}
+@media screen and (max-width:728px) {
+    .mf_box {
+        display: flex;
+        flex-direction: column;       
+    }
+}
+@media screen and (max-width:728px) {
+    .header2 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;       
+    }
+}
+@media screen and (max-width:728px) {
+    .header {
+        display: none;
+              
+    }
+}
+@media screen and (max-width:728px) {
+    .tex_columna_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+              
+    }
+}
+@media screen and (max-width:728px) {
+    .tex_small {
+        text-align: center;
+        align-items: center;
+              
+    }
+}
